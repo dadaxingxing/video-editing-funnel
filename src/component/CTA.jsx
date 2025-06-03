@@ -4,7 +4,7 @@ import { useState } from 'react';
 
 function CTA({children, }) {
     const handleSubmit = () => {
-        console.log('Redirecting user to buttom of funnel!')
+        console.log('Redirecting user to bottom of funnel!')
     };
 
     return (
