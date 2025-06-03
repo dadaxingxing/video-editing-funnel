@@ -1,9 +1,11 @@
 import './CTA.css';
 
-function CTA() {
+
+
+function CTA({children, }) {
     return (
-        <div className='button_frame d-flex align-items-center justify-content-center'>
-            <div className='button_text'>temp hewfiujfiosdjfiod</div>
+        <div role='button' className='btn button_frame d-inline-block'>
+            <div className='button_text'>{children}</div>
         </div>
     )
 };

@@ -5,7 +5,9 @@ import CTA from './component/CTA';
 function App() {
 
   return (
-    <CTA/>
+    <>
+      <CTA>monkey</CTA>
+    </>
   )
 }
 
