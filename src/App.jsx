@@ -7,7 +7,9 @@ function App() {
   return (
     <>
       <CTA>monkey</CTA>
-      <Proof>add testimonial herefdjsiofjsadiofiosadjfoiasdjio</Proof>
+      <Proof>add testimonial here</Proof>
+      <Proof>add testimonial here</Proof>
+      <Proof>add testimonial here</Proof>
     </>
   )
 }
