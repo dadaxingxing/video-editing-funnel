@@ -1,0 +1,43 @@
+:root{
+    --black: #0D0D0D;
+    --white_gradient: linear-gradient(180deg, #FFFFFF, #999999);
+}
+
+.cardFrame{
+    width: 26.3rem;
+    height: 24rem;
+    background-color: var(--black);
+    border-radius: 1.25rem;
+    border-color: white;
+    border-width: 2px;
+    border-style: solid; 
+    padding: 0 2rem;
+}
+
+.title, .paragraph{
+    background: var(--gradient-white);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 500;    
+}
+
+.title{
+    font-weight: 600;
+    font-size: 4rem;   
+}
+
+.paragraph{
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.line{
+  height: 2px;
+  background-color: white;
+  width: 100%;
+  /* margin: 1rem 0; */
+}
+
+.seperator{
+    margin-bottom: 2rem;
+}

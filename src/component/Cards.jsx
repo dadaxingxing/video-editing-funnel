@@ -1,10 +1,16 @@
 import './Cards.css';
 
 
-function Cards ({children, }) {
+function Cards ({title, paragraph}) {
     return (
-        <div>
-            
+        <div className='cardFrame d-flex flex-column align-items-center justify-content-center'>
+
+            <div className='seperator'>
+                <div className='title'>{title}</div>
+                <div className='line'></div>
+            </div>
+
+            <div className='paragraph'>{paragraph}</div>
         </div>
     )
 };

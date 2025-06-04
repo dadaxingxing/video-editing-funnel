@@ -1,6 +1,8 @@
 import './App.css';
 import CTA from './component/CTA';
 import Proof from './component/Proof';
+import Cards from './component/Cards';
+
 
 function App() {
 
@@ -10,7 +12,10 @@ function App() {
       <Proof>add testimonial here</Proof>
       <Proof>add testimonial here</Proof>
       <Proof>add testimonial here</Proof>
-
+      <Cards 
+        title='Review'
+        paragraph='Indicate the amount of video needed everyday and fill out ways to contact by filling out the form.'
+      />
     </div>
   )
 }
