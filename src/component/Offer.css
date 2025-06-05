@@ -1,0 +1,45 @@
+:root{
+    --black: #0D0D0D;
+    --white_gradient: linear-gradient(180deg, #FFFFFF, #999999);
+    --grey: #323232;
+    --lighter_grey: #999999;
+}
+
+.offerFrame{
+    width: 39rem;
+    height: 46rem;
+    background-color: var(--black);
+    padding: 4rem;
+    color: white;
+    border-radius: 1.75rem;
+
+    border-color: white;
+    border-width: 2px;
+    border-style: solid;
+
+    gap: 3.25rem;
+}
+
+.package{
+    font-size: 2.25rem;
+    font-weight: 600;
+}
+
+.description{
+    font-family: 1.25rem;
+    color: var(--lighter_grey);
+
+}
+
+.price{
+    font-size: 4.6rem;
+    font-weight: 600;
+}
+
+.unit{
+    background-color: var(--grey);
+    color: var(--lighter_grey);
+    border-radius: .25rem;
+    font-size: 1rem;
+}
+

@@ -6,7 +6,7 @@ function Offer({packages, description, price, unit, points}) {
         <div className='offerFrame d-flex flex-column justify-items-center align-items center'>
             <div className='package'>{packages}</div>
             <div className='description'>{description}</div>
-            <div className='priceFrame d-flex flex-row'>
+            <div className='priceFrame d-flex flex-row align-items-center'>
                 <div className='price'>{price}</div>
                 <div className='unit'>{unit}</div>
             </div>
