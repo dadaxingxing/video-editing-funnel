@@ -6,9 +6,7 @@
 .button_frame {
     padding: .5rem;
     background-color: var(--yellow);
-    min-width: 5rem;
-    height: 2.5rem;
-    border-radius: .25rem;  
+    
     font-weight: 600;
     color: white;
     font-size: 1.25rem;

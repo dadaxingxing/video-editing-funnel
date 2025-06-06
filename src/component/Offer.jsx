@@ -10,7 +10,12 @@ function Offer({packages, description, price, unit, points}) {
                 <div className='price'>{price}</div>
                 <div className='unit'>{unit}</div>
             </div>
-            <CTA className='CTA'>Get Started</CTA>
+            <CTA 
+                className='CTA'
+                height='5rem'
+                width='29rem'
+                radius='1rem'
+            >Get Started</CTA>
             <ul className='bulletPoints'>
                 {points.map((point, index) => (
                     <li className='point' key={index}>{point}</li>
