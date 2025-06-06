@@ -1,9 +1,12 @@
 import './Proof.css';
 
-function Proof ({children, }) {
+function Proof ({children, width='22rem'}) {
     return (
 
-        <div className='outerBox d-flex justify-content-center align-items-center'>
+        <div 
+            className='outerBox d-flex justify-content-center align-items-center'
+            style={{width}}    
+        >
             <div className='innerText'>{children}</div>
         </div>
     )
