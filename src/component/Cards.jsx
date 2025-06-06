@@ -3,7 +3,7 @@ import './Cards.css';
 
 function Cards ({title, paragraph}) {
     return (
-        <div className='cardFrame d-flex flex-column align-items-center justify-content-center'>
+        <div className='cardFrame d-flex flex-column align-items-center justify-content-start'>
 
             <div className='seperator'>
                 <div className='title'>{title}</div>
