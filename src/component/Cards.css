@@ -12,6 +12,7 @@
     border-width: 2px;
     border-style: solid; 
     padding: 0 2rem;
+    padding-top: 1rem;
 }
 
 .title, .paragraph{

@@ -24,6 +24,11 @@
 .package{
     font-size: 2.25rem;
     font-weight: 600;
+    color: var(--white_gradient);
+
+    background: var(--gradient-white);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .description{
