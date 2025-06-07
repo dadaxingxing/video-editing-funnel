@@ -15,8 +15,8 @@ function App() {
 
 
   return (
-    <div className='d-flex flex-column'>
-      <CTA
+    <div className='page1 d-flex flex-column justify-content-center align-items-center'>
+      {/* <CTA
         height='2.8rem'
         width='7.8rem'
       >Buy Now</CTA>
@@ -51,8 +51,10 @@ function App() {
         price='$35'
         unit='/video'
         points={offerPoints}
-      />
+      /> */}
     </div>
+
+
   )
 }
 
