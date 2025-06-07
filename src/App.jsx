@@ -52,9 +52,9 @@ function App() {
               width='7.8rem'
             >Buy Now</CTA>
             <div className='d-flex flex-row justify-content-center'>
-              <Proof>add testimonial here</Proof>
-              <Proof>add testimonial here</Proof>
-              <Proof>add testimonial here</Proof>
+              <Proof>3+ Years of Growing Pages</Proof>
+              <Proof>3500+ Pieces of Content Created</Proof>
+              <Proof>35+ Million Views Generated</Proof>
             </div>
 
 
