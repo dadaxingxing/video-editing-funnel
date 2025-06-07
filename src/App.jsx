@@ -16,8 +16,25 @@ function App() {
 
   return (
     <>
-      <div className='navBar'>
-        
+      <div className='container-fluid navBar d-flex flex-row justify-content-center align-items-center'>
+        <div className='col-4 col-md-3'>
+          <div className='logo'>disciplor™</div>
+        </div>
+
+        <div className='col-4 col-md-6'>
+          <div className='nagButtons d-flex justify-content-center'>
+            <div>About</div>
+            <div>Pricing</div>
+            <div>Newsletter</div>
+          </div>
+        </div>
+
+        <div className='col-4 col-md-3 justify-content-end'>
+          <CTA
+           width='6rem'
+           height='2.5rem' 
+          >Sign-up</CTA>
+        </div>
 
       </div>
 
