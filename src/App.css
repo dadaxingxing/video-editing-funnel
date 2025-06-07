@@ -1,3 +1,18 @@
+:root{
+    --yellow: #FF6B00;
+    --gradient-white: linear-gradient(180deg, #FFFFFF, #999999)
+}
+
+.navBar{
+    width: 100%;
+    height: 4.25rem;
+    
+    z-index: 10000;
+    top: 0;
+    position: sticky;
+    background-color: black;
+}
+
 .page1{
     background-image: url('./assets/tunnelBG.svg');
     background-size: cover;
