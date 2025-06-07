@@ -41,23 +41,27 @@ function App() {
 
       {/* first page */}
       <div className='page1 d-flex flex-column justify-content-center align-items-center text-center'>
-        <div className='container'>
-          <div className='col-10 mx-auto'>
+        <div className='container '>
 
+          <div className='col-12 mx-auto mb-4'>
+              <div className='p1_title'>We help <u className='highlight'>social media agencies</u> create high quality content through <u className='highlight'>short-form videos.</u></div>
+          </div>
 
-            <div className='p1_title'>We help social media agencies create high quality content through short-form videos.</div>
+          <div className='col-12 mx-auto mb-4'>
             <div className='p1_text'>Editing premium content that saves you time and goes viral.</div>
+          </div>
+
+          <div className='col-4 mx-auto d-flex justify-content-center mb-4'>
             <CTA
               height='2.8rem'
               width='7.8rem'
             >Buy Now</CTA>
-            <div className='d-flex flex-row justify-content-center'>
-              <Proof>3+ Years of Growing Pages</Proof>
-              <Proof>3500+ Pieces of Content Created</Proof>
-              <Proof>35+ Million Views Generated</Proof>
-            </div>
+          </div>
 
-
+          <div className='d-flex flex-row justify-content-center mb-4 p1_proof_container'>
+            <Proof>3+ Years of Growing Pages</Proof>
+            <Proof>3500+ Pieces of Content Created</Proof>
+            <Proof>35+ Million Views Generated</Proof>
           </div>
 
         </div>

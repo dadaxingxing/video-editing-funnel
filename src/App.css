@@ -38,12 +38,31 @@
 
     width: 100%;
     height: 100dvh;
+
 }
 
 body{
     color: white;
 }
 
+.p1_stuff{
+    gap: 100000rem;
+}
+
 .p1_title{
-    font-weight: 600;
+    font-weight: 700;
+    font-size: 3.75rem;
+    line-height: auto;
+}
+
+.highlight{
+    color: var(--yellow);
+}
+
+.p1_text{
+    font-size: 1.5rem;
+}
+
+.p1_proof_container{
+    gap: 1.25rem;
 }
