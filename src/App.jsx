@@ -22,14 +22,14 @@ function App() {
         </div>
 
         <div className='col-4 col-md-6'>
-          <div className='nagButtons d-flex justify-content-center'>
+          <div className='navButtons d-flex justify-content-center'>
             <div>About</div>
             <div>Pricing</div>
             <div>Newsletter</div>
           </div>
         </div>
 
-        <div className='col-4 col-md-3 justify-content-end'>
+        <div className='col-4 col-md-3 d-flex justify-content-end'>
           <CTA
            width='6rem'
            height='2.5rem' 
