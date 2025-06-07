@@ -16,6 +16,7 @@ function App() {
 
   return (
     <>
+      {/* navigation bar */}
       <div className='container-fluid navBar d-flex flex-row justify-content-center align-items-center'>
         <div className='col-4 col-md-3'>
           <div className='logo'>disciplor™</div>
@@ -38,45 +39,63 @@ function App() {
 
       </div>
 
-      <div className='page1 d-flex flex-column justify-content-center align-items-center'>
+      {/* first page */}
+      <div className='page1 d-flex flex-column justify-content-center align-items-center text-center'>
+        <div className='container'>
+          <div className='col-10 mx-auto'>
 
-        {/* <CTA
-          height='2.8rem'
-          width='7.8rem'
-        >Buy Now</CTA>
 
-        <div className='d-flex flex-row'>
+            <div className='p1_title'>We help social media agencies create high quality content through short-form videos.</div>
+            <div className='p1_text'>Editing premium content that saves you time and goes viral.</div>
+            <CTA
+              height='2.8rem'
+              width='7.8rem'
+            >Buy Now</CTA>
+            <div className='d-flex flex-row justify-content-center'>
+              <Proof>add testimonial here</Proof>
+              <Proof>add testimonial here</Proof>
+              <Proof>add testimonial here</Proof>
+            </div>
 
-          <Proof>add testimonial here</Proof>
-          <Proof>add testimonial here</Proof>
-          <Proof>add testimonial here</Proof>
-          
-        </div>
-        <div className='d-flex flex-row'>
 
-          <Cards 
-            title='Review'
-            paragraph='Indicate the amount of video needed everyday and fill out ways to contact by filling out the form.'
-          />
-          <Cards 
-            title='Upload'
-            paragraph='Upload all footage to us along with any requirements to a google drive.'
-          />
-          <Cards 
-            title='Revise'
-            paragraph='You will review our edit until you are satisfied before we move onto the next video.'
-          />
-          
+          </div>
+
         </div>
 
-        <Offer
-          packages='Standard'
-          description='The ideal plan for daily short-form content needs'
-          price='$35'
-          unit='/video'
-          points={offerPoints}
-        /> */}
       </div>
+      <CTA
+        height='2.8rem'
+        width='7.8rem'
+      >Buy Now</CTA>
+
+      <div className='d-flex flex-row'>
+
+        
+      </div>
+      <div className='d-flex flex-row'>
+
+        <Cards 
+          title='Review'
+          paragraph='Indicate the amount of video needed everyday and fill out ways to contact by filling out the form.'
+        />
+        <Cards 
+          title='Upload'
+          paragraph='Upload all footage to us along with any requirements to a google drive.'
+        />
+        <Cards 
+          title='Revise'
+          paragraph='You will review our edit until you are satisfied before we move onto the next video.'
+        />
+        
+      </div>
+
+      <Offer
+        packages='Standard'
+        description='The ideal plan for daily short-form content needs'
+        price='$35'
+        unit='/video'
+        points={offerPoints}
+      />
     
     </>
 

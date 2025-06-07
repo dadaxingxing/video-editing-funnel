@@ -3,6 +3,7 @@
     --gradient-white: linear-gradient(180deg, #FFFFFF, #999999)
 }
 
+
 .navBar{
     /* width: 100%; */
     height: 4.5rem;
@@ -39,6 +40,10 @@
     height: 100dvh;
 }
 
+body{
+    color: white;
+}
 
-
-
+.p1_title{
+    font-weight: 600;
+}
