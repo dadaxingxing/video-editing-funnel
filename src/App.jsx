@@ -68,7 +68,7 @@ function App() {
           <CTA
             width='6rem'
             height='2.5rem' 
-            >Sign-up</CTA>
+          >Sign-up</CTA>
         </div>
 
       </div>
@@ -87,6 +87,7 @@ function App() {
               <div className='p1_title'>We help <u className='highlight'>social media agencies</u> create high quality content through <u className='highlight'>short-form videos.</u></div>
           </div>
 
+          {/* Title */}
           <div className='col-12 mx-auto mb-4'>
             <div className='p1_text'>Editing premium content that saves you time and goes viral.</div>
           </div>
@@ -98,9 +99,9 @@ function App() {
             >Buy Now</CTA>
           </div>
 
-          <div className='d-flex flex-row justify-content-center mb-4 p1_proof_container'>
+          <div className='d-flex justify-content-center align-items-center mb-4 p1_proof_container flex-column flex-lg-row'>
             <Proof>3+ Years of Growing Pages</Proof>
-            <Proof>3500+ Pieces of Content Created</Proof>
+            <Proof width='25rem'>3500+ Pieces of Content Created</Proof>
             <Proof>35+ Million Views Generated</Proof>
           </div>
 

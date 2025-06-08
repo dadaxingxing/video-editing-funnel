@@ -120,7 +120,8 @@ body{
 }
 
 .p1_text{
-    font-size: 1.5rem;
+    font-size: clamp(.5rem, 1.5rem, 1.5rem);
+
 }
 
 .p1_proof_container{
