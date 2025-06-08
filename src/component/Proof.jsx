@@ -1,6 +1,6 @@
 import './Proof.css';
 
-function Proof ({children, width='22rem'}) {
+function Proof ({children, width='clamp(13rem, 44vw, 22rem)'}) {
     return (
 
         <div 

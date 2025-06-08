@@ -104,7 +104,7 @@ function App() {
           {/* Proof */}
           <div className='d-flex justify-content-center align-items-center mb-4 p1_proof_container flex-column flex-lg-row'>
             <Proof>3+ Years of Growing Pages</Proof>
-            <Proof width='25rem'>3500+ Pieces of Content Created</Proof>
+            <Proof width='clamp(16rem, 44vw, 22rem)'>3500+ Pieces of Content Created</Proof>
             <Proof>35+ Million Views Generated</Proof>
           </div>
 
