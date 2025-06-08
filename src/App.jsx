@@ -17,9 +17,16 @@ function App() {
     'dedicated video editor'
   ];
 
-  const dropDownItem = () => {
-
+  const DropDownItem = (prop) => {
+    return (
+      <div 
+        role='button'
+        onClick={() => setIsOpen(!isOpen)}
+        className='navButtons'
+      >{prop.children}</div>
+    );
   };
+
   return (
     <>
       {/* navigation bar */}
@@ -60,9 +67,9 @@ function App() {
       </div>
 
       <div className={`dropdownMenu ${isOpen ? 'slideDown': ''}`}>
-        <div>About</div>
-        <div>Pricing</div>
-        <div>Newsletter</div>
+        <DropDownItem>About</DropDownItem>
+        <DropDownItem>Pricing</DropDownItem>
+        <DropDownItem>Newsletter</DropDownItem>
       </div>
 
       {/* first page */}
@@ -131,6 +138,6 @@ function App() {
 
 
   );
-}
+};
 
 export default App;
