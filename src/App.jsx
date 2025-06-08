@@ -4,17 +4,22 @@ import Proof from './component/Proof';
 import Cards from './component/Cards';
 import Offer from './component/Offer';
 import 'bootstrap-icons/font/bootstrap-icons.css';
+import { useState } from 'react';
+
 
 function App() {
+  const [isOpen, setIsOpen] = useState(false);
   const offerPoints = [
     'short premium content (10-30s)',
     '24 hours guaranteed delivery',
     'thumbnail design',
     'unlimited revisions',
     'dedicated video editor'
-  ]
+  ];
 
+  const dropDownItem = () => {
 
+  };
   return (
     <>
       {/* navigation bar */}
@@ -32,20 +37,16 @@ function App() {
         </div>
 
         <div className='col-6 col-lg-4 d-block d-lg-none'>
-          <div className='dropdown d-flex justify-content-end'>
+          <div className='d-flex justify-content-end'>
             <button 
-              className='dropdown-toggle border-0 bg-transparent p-0 m-0 d-flex align-items-center btn-icon' 
-              type='button' 
-              data-bs-toggle='dropdown' 
-              aria-expanded='false'
+              className='border-0 bg-transparent p-0 m-0 d-flex align-items-center btn-icon' 
+              type='button'
+              onClick={() => setIsOpen(!isOpen)}
             >
               <i className='bi bi-list hamburger'></i>
             </button>
-            <ul className='dropdown-menu'>
-              <li><a className='dropdown-item' href='#'>About</a></li>
-              <li><a className='dropdown-item' href='#'>Pricing</a></li>
-              <li><a className='dropdown-item' href='#'>Newsletter</a></li>
-            </ul>
+
+
           </div>
         </div>
 
@@ -53,9 +54,15 @@ function App() {
           <CTA
             width='6rem'
             height='2.5rem' 
-          >Sign-up</CTA>
+            >Sign-up</CTA>
         </div>
 
+      </div>
+
+      <div className={`dropdownMenu ${isOpen ? 'slideDown': ''}`}>
+        <div>About</div>
+        <div>Pricing</div>
+        <div>Newsletter</div>
       </div>
 
       {/* first page */}
@@ -123,7 +130,7 @@ function App() {
     </>
 
 
-  )
+  );
 }
 
 export default App;

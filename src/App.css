@@ -8,7 +8,7 @@
     /* width: 100%; */
     height: 4.5rem;
 
-    z-index: 10000;
+    z-index: 1000;
     top: 0;
     position: sticky;
     background-color: black;
@@ -35,6 +35,10 @@
     border: none;
 }
 
+.btn-icon,
+.logo{
+    z-index: inherit;
+}
 
 .btn-icon:focus{
     outline: none;
@@ -52,6 +56,31 @@
 .scale{
     transform: scale(1.3);
     transition: transform 0.2s ease;
+}
+
+.dropdownMenu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    z-index: 900;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+
+    transform: translateY(-100%);
+    pointer-events: none;
+    transition: transform 0.4s ease-out;
+}
+
+.dropdownMenu.slideDown{
+    transform: translateY(0);
+    pointer-events: auto;
 }
 
 .page1{
