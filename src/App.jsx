@@ -18,11 +18,11 @@ function App() {
     <>
       {/* navigation bar */}
       <div className='container-fluid navBar d-flex flex-row justify-content-center align-items-center'>
-        <div className='col-4 col-md-3'>
+        <div className='col-4'>
           <div className='logo'>disciplor™</div>
         </div>
 
-        <div className='col-4 col-md-6'>
+        <div className='col-4'>
           <div className='navButtons d-flex justify-content-center'>
             <div>About</div>
             <div>Pricing</div>
@@ -30,10 +30,10 @@ function App() {
           </div>
         </div>
 
-        <div className='col-4 col-md-3 d-flex justify-content-end'>
+        <div className='col-4 d-none d-lg-flex justify-content-end'>
           <CTA
-           width='6rem'
-           height='2.5rem' 
+            width='6rem'
+            height='2.5rem' 
           >Sign-up</CTA>
         </div>
 
@@ -41,7 +41,7 @@ function App() {
 
       {/* first page */}
       <div className='page1 d-flex flex-column justify-content-center align-items-center text-center'>
-        <div className='container '>
+        <div className='container p1_filter'>
 
           <div className='col-12 mx-auto mb-4'>
               <div className='p1_title'>We help <u className='highlight'>social media agencies</u> create high quality content through <u className='highlight'>short-form videos.</u></div>
@@ -67,7 +67,7 @@ function App() {
         </div>
 
       </div>
-      <CTA
+      {/* <CTA
         height='2.8rem'
         width='7.8rem'
       >Buy Now</CTA>
@@ -100,7 +100,7 @@ function App() {
         unit='/video'
         points={offerPoints}
       />
-    
+     */}
     </>
 
 
