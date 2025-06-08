@@ -22,11 +22,26 @@ function App() {
           <div className='logo'>disciplor™</div>
         </div>
 
-        <div className='col-4'>
+
+
+        <div className='col-4 d-none d-lg-block'>
           <div className='navButtons d-flex justify-content-center'>
             <div>About</div>
             <div>Pricing</div>
             <div>Newsletter</div>
+          </div>
+        </div>
+
+        <div className='col-4 d-block d-lg-none'>
+          <div className='dropdown'>
+            <button className='btn btn-secondary dropdown-toggle' type='button' data-bs-toggle='dropdown' aria-expanded='false'>
+              Menu
+            </button>
+            <ul className='dropdown-menu'>
+              <li><a className='dropdown-item' href='#'>About</a></li>
+              <li><a className='dropdown-item' href='#'>Pricing</a></li>
+              <li><a className='dropdown-item' href='#'>Newsletter</a></li>
+            </ul>
           </div>
         </div>
 
