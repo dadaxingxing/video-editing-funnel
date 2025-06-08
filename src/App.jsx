@@ -104,10 +104,10 @@ function App() {
           {/* Proof */}
           <div className="container">
             <div className="row justify-content-center mb-4">
-              <div className="col-12 col-md-6 col-xl-4 d-flex justify-content-center mb-3">
+              <div className="col-12 col-md-6 col-xl-4 d-flex justify-content-center justify-content-lg-end mb-3">
                 <Proof>3+ Years of Growing Pages</Proof>
               </div>
-              <div className="col-12 col-md-6 col-xl-4 d-flex justify-content-center mb-3">
+              <div className="col-12 col-md-6 col-xl-4 d-flex justify-content-center justify-content-lg-start mb-3">
                 <Proof width='clamp(16rem, 44vw, 22rem)'>3500+ Pieces of Content Created</Proof>
               </div>
               <div className="col-12 col-md-12 col-xl-4 d-flex justify-content-center">
