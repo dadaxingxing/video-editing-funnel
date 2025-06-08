@@ -12,7 +12,7 @@
     position: sticky;
     background-color: black;
 
-    padding: 0 4.7rem;
+    /* padding: 0 4.7rem; */
 }
 
 .logo{
@@ -105,14 +105,10 @@ body{
     color: white;
 }
 
-.p1_stuff{
-    gap: 100000rem;
-}
 
 .p1_title{
     font-weight: 700;
-    font-size: 3.75rem;
-    line-height: auto;
+    font-size: clamp(1.25rem, 5vw, 3.76rem);
 }
 
 .highlight{
@@ -120,7 +116,7 @@ body{
 }
 
 .p1_text{
-    font-size: clamp(.5rem, 1.5rem, 1.5rem);
+        font-size: clamp(.8rem, 3vw, 1.5rem);
 
 }
 

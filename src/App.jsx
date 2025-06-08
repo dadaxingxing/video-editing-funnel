@@ -37,7 +37,7 @@ function App() {
   return (
     <>
       {/* navigation bar */}
-      <div className='container-fluid navBar d-flex flex-row justify-content-center align-items-center'>
+      <div className='container-fluid navBar px-0 px-sm-5 d-flex flex-row justify-content-center align-items-center'>
         <div className='col-6 col-lg-4'>
           <div className='logo'>disciplor™</div>
         </div>
@@ -81,17 +81,19 @@ function App() {
 
       {/* first page */}
       <div className='page1 d-flex flex-column justify-content-center align-items-center text-center'>
-        <div className='container p1_filter'>
+        <div className='container'>
 
-          <div className='col-12 mx-auto mb-4'>
+          {/* Title */}
+          <div className='col-12 mx-auto mb-4 '>
               <div className='p1_title'>We help <u className='highlight'>social media agencies</u> create high quality content through <u className='highlight'>short-form videos.</u></div>
           </div>
 
-          {/* Title */}
+          {/* Description  */}
           <div className='col-12 mx-auto mb-4'>
             <div className='p1_text'>Editing premium content that saves you time and goes viral.</div>
           </div>
 
+          {/* CTA button */}
           <div className='col-4 mx-auto d-flex justify-content-center mb-4'>
             <CTA
               height='2.8rem'
@@ -99,6 +101,7 @@ function App() {
             >Buy Now</CTA>
           </div>
 
+          {/* Proof */}
           <div className='d-flex justify-content-center align-items-center mb-4 p1_proof_container flex-column flex-lg-row'>
             <Proof>3+ Years of Growing Pages</Proof>
             <Proof width='25rem'>3500+ Pieces of Content Created</Proof>
