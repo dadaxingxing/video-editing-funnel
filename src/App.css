@@ -30,6 +30,30 @@
     gap: 2.5rem;
 }
 
+.btn-icon{
+    background-color: transparent;
+    border: none;
+}
+
+
+.btn-icon:focus{
+    outline: none;
+}
+
+.hamburger{
+    color: white;
+    font-size: 2.5rem;
+}
+
+.hamburger:active{
+    transform: scale(1.3);
+    transition: transform 0.05s ease;
+}
+.scale{
+    transform: scale(1.3);
+    transition: transform 0.2s ease;
+}
+
 .page1{
     background-image: url('./assets/tunnelBG.svg');
     background-size: cover;
@@ -38,7 +62,6 @@
 
     width: 100%;
     height: 100dvh;
-
 }
 
 

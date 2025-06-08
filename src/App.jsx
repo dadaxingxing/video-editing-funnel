@@ -3,6 +3,7 @@ import CTA from './component/CTA';
 import Proof from './component/Proof';
 import Cards from './component/Cards';
 import Offer from './component/Offer';
+import 'bootstrap-icons/font/bootstrap-icons.css';
 
 function App() {
   const offerPoints = [
@@ -18,11 +19,9 @@ function App() {
     <>
       {/* navigation bar */}
       <div className='container-fluid navBar d-flex flex-row justify-content-center align-items-center'>
-        <div className='col-4'>
+        <div className='col-6 col-lg-4'>
           <div className='logo'>disciplor™</div>
         </div>
-
-
 
         <div className='col-4 d-none d-lg-block'>
           <div className='navButtons d-flex justify-content-center'>
@@ -32,10 +31,15 @@ function App() {
           </div>
         </div>
 
-        <div className='col-4 d-block d-lg-none'>
-          <div className='dropdown'>
-            <button className='btn btn-secondary dropdown-toggle' type='button' data-bs-toggle='dropdown' aria-expanded='false'>
-              Menu
+        <div className='col-6 col-lg-4 d-block d-lg-none'>
+          <div className='dropdown d-flex justify-content-end'>
+            <button 
+              className='dropdown-toggle border-0 bg-transparent p-0 m-0 d-flex align-items-center btn-icon' 
+              type='button' 
+              data-bs-toggle='dropdown' 
+              aria-expanded='false'
+            >
+              <i className='bi bi-list hamburger'></i>
             </button>
             <ul className='dropdown-menu'>
               <li><a className='dropdown-item' href='#'>About</a></li>
