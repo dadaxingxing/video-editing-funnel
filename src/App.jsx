@@ -17,13 +17,20 @@ function App() {
     'dedicated video editor'
   ];
 
-  const DropDownItem = (prop) => {
+  const DropDownItem = ({children, href='#'}) => {
     return (
       <div 
         role='button'
         onClick={() => setIsOpen(!isOpen)}
         className='navButtons'
-      >{prop.children}</div>
+        href={href}
+      >
+        <a 
+          href={href} 
+          className='anchor'
+        >{children}
+        </a>
+      </div>
     );
   };
 
@@ -37,9 +44,9 @@ function App() {
 
         <div className='col-4 d-none d-lg-block'>
           <div className='navButtons d-flex justify-content-center'>
-            <div>About</div>
-            <div>Pricing</div>
-            <div>Newsletter</div>
+            <DropDownItem>About</DropDownItem>
+            <DropDownItem>Pricing</DropDownItem>
+            <DropDownItem>Newsletter</DropDownItem>
           </div>
         </div>
 
@@ -66,7 +73,7 @@ function App() {
 
       </div>
 
-      <div className={`dropdownMenu ${isOpen ? 'slideDown': ''}`}>
+      <div className={`d-lg-none dropdownMenu ${isOpen ? 'slideDown': ''}`}>
         <DropDownItem>About</DropDownItem>
         <DropDownItem>Pricing</DropDownItem>
         <DropDownItem>Newsletter</DropDownItem>

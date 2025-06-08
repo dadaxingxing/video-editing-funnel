@@ -27,6 +27,14 @@
     color: white;
     font-size: 1.25rem;
     gap: 2.5rem;
+
+    cursor: pointer;
+    user-select: none;
+}
+
+.anchor, .anchor:focus, .anchor:hover{
+    color: white;
+    
 }
 
 .btn-icon{
