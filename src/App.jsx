@@ -45,7 +45,7 @@ function App() {
         <div className='col-4 d-none d-lg-block'>
           <div className='navButtons d-flex justify-content-center'>
             <DropDownItem href='#about'>About</DropDownItem>
-            <DropDownItem>Pricing</DropDownItem>
+            <DropDownItem href='#pricing'>Pricing</DropDownItem>
             <DropDownItem>Newsletter</DropDownItem>
           </div>
         </div>
@@ -75,7 +75,7 @@ function App() {
 
       <div className={`d-lg-none dropdownMenu ${isOpen ? 'slideDown': ''}`}>
         <DropDownItem href='#about'>About</DropDownItem>
-        <DropDownItem>Pricing</DropDownItem>
+        <DropDownItem href='#pricing'>Pricing</DropDownItem>
         <DropDownItem>Newsletter</DropDownItem>
       </div>
 
@@ -167,17 +167,23 @@ function App() {
 
       {/* Third Page */}
       <div className='container page3 d-flex justify-content-center align-items-center flex-column'>
-        <div className='row'>
-          <div className='p3_title'>Pricing</div>
+        <div className='row' >
+          <div className='col-12 p3_title' id='pricing'>Pricing</div>
 
         </div>
-        <Offer
-          packages='Standard'
-          description='The ideal plan for daily short-form content needs'
-          price='$35'
-          unit='/video'
-          points={offerPoints}
-        />
+        <div className='row'>
+          <div className='col-12'>
+
+            <Offer
+              packages='Standard'
+              description='The ideal plan for daily short-form content needs'
+              price='$35'
+              unit='/video'
+              points={offerPoints}
+            />
+
+          </div>
+        </div>
         
       </div>
     

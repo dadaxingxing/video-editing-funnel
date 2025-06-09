@@ -3,10 +3,10 @@ import CTA from './CTA';
 
 function Offer({packages, description, price, unit, points}) {
     return (
-        <div className='offerFrame d-flex gap-3 flex-column justify-items-center align-items-start py-3 px-2 p-md-5'>
-            <div className='package'>{packages}</div>
-            <div className='description'>{description}</div>
-            <div className='priceFrame d-flex flex-row align-items-center'>
+        <div className='offerFrame d-flex gap-5 flex-column justify-items-center align-items-start py-4 px-3 p-md-5'>
+            <div className='package mb-2'>{packages}</div>
+            <div className='description mb-2'>{description}</div>
+            <div className='priceFrame d-flex flex-row align-items-center mb-2'>
                 <div className='price'>{price}</div>
                 <div className='unit'>{unit}</div>
             </div>
@@ -16,7 +16,7 @@ function Offer({packages, description, price, unit, points}) {
                 width='100%'
                 radius='1rem'
             >Get Started</CTA>
-            <ul className='bulletPoints'>
+            <ul className='bulletPoints mt-2 mt-lg-5'>
                 {points.map((point, index) => (
                     <li className='point' key={index}>{point}</li>
                 ))}

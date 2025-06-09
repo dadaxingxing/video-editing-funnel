@@ -14,7 +14,7 @@
     border-radius: 1.75rem;
 
     border-color: white;
-    border-width: 2px;
+    border-width: 1px;
     border-style: solid;
 
     /* gap: 2rem; */
@@ -39,7 +39,7 @@
 
 
 .priceFrame{
-    gap: 1rem;
+    gap: .75rem;
 }
 
 .price{
@@ -57,7 +57,7 @@
 
 .bulletPoints{
     height: clamp(17.5rem, 14.9643rem + 12.6786vw, 26.375rem);
-    line-height: 250%;
+    /* line-height: 1%; */
 }
 
 .point{
