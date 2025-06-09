@@ -3,7 +3,7 @@ import CTA from './CTA';
 
 function Offer({packages, description, price, unit, points}) {
     return (
-        <div className='offerFrame d-flex flex-column justify-items-center align-items center p-5'>
+        <div className='offerFrame d-flex gap-3 flex-column justify-items-center align-items-start py-3 px-2 p-md-5'>
             <div className='package'>{packages}</div>
             <div className='description'>{description}</div>
             <div className='priceFrame d-flex flex-row align-items-center'>
@@ -12,7 +12,7 @@ function Offer({packages, description, price, unit, points}) {
             </div>
             <CTA 
                 className='CTA '
-                height='5rem'
+                height='4rem'
                 width='100%'
                 radius='1rem'
             >Get Started</CTA>
