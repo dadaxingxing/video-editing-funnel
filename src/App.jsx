@@ -123,6 +123,52 @@ function App() {
         </div>
 
       </div>
+
+      {/* Second page */}
+      <div className='page2 container-fluid d-flex flex-column justify-content-center'>
+
+
+        <div className='row text-center mb-4'>
+
+          <div className='col-12'>
+            <div className='p2_title'>Work Flow</div>
+            <div className='p2_paragraph'>what you can expect from us.</div>
+          </div>
+
+        </div>
+
+
+        <div className='row p2_cards justify-content-center'>
+
+          <div className='col-12 col-lg-4 col-xl-3 d-flex justify-content-center'>
+            <Cards 
+              title='Review'
+              paragraph='Indicate the amount of video needed everyday and fill out ways to contact by filling out the form.'
+              className=''
+            />
+          </div>
+
+          <div className='col-12 col-lg-4 col-xl-3 d-flex justify-content-center'>
+
+            <Cards 
+              title='Upload'
+              paragraph='Upload all footage to us along with any requirements to a google drive.'
+            />
+          </div>
+
+          <div className='col-12 col-xl-3 d-flex justify-content-center'>
+            <Cards 
+              title='Revise'
+              paragraph='You will review our edit until you are satisfied before we move onto the next video.'
+            />
+          </div>
+
+
+        </div>
+
+
+      </div>
+
       {/* <CTA
         height='2.8rem'
         width='7.8rem'
@@ -155,8 +201,8 @@ function App() {
         price='$35'
         unit='/video'
         points={offerPoints}
-      />
-     */}
+      /> */}
+    
     </>
 
 

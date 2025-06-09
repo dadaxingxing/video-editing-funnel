@@ -1,6 +1,8 @@
 :root{
     --yellow: #FF6B00;
-    --gradient-white: linear-gradient(180deg, #FFFFFF, #999999)
+    --gradient-white: linear-gradient(180deg, #FFFFFF, #999999);
+    --bold: 700;
+    --regular: 600;
 }
 
 .navBar{
@@ -122,4 +124,31 @@ body{
 
 .p1_proof_container{
     gap: 1.25rem;
+}
+
+.page2{
+    width: 100%;
+    height: 100dvh;
+    gap: 2.75rem;
+}
+
+.p2_title, .p2_paragraph{
+    font-weight: 600;
+    background: var(--gradient-white);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.p2_title{
+    font-weight: var(--bold);
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    margin-bottom: -1.25rem;
+}
+
+.p2_paragraph{
+    font-size: clamp(1rem, 2vw, 1.25rem);
+}
+
+.p2_cards{
+    gap: 2rem;
 }
