@@ -4,8 +4,8 @@
 }
 
 .cardFrame{
-    width: 26.3rem;
-    height: 24rem;
+    width: clamp(18.75rem, 16.5929rem + 10.7857vw, 26.3rem);
+    font: clamp(14.375rem, 11.6964rem + 13.3929vw, 23.75rem);
     background-color: var(--black);
     border-radius: 1.25rem;
     border-color: white;
@@ -22,13 +22,14 @@
     font-weight: 500;    
 
 }
+
 .title{
     font-weight: 600;
-    font-size: 4rem;   
+    font-size: clamp(3.25rem, 4vw, 4rem);   
 }
 
 .paragraph{
-    font-size: 1.5rem;
+    font-size: clamp(1rem, 1.5vw, 1.5rem);
     text-align: center;
 }
 
@@ -36,8 +37,4 @@
   height: 2px;
   background-color: white;
   width: 100%;
-}
-
-.seperator{
-    margin-bottom: 2rem;
 }

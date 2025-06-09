@@ -44,7 +44,7 @@ function App() {
 
         <div className='col-4 d-none d-lg-block'>
           <div className='navButtons d-flex justify-content-center'>
-            <DropDownItem>About</DropDownItem>
+            <DropDownItem href='#about'>About</DropDownItem>
             <DropDownItem>Pricing</DropDownItem>
             <DropDownItem>Newsletter</DropDownItem>
           </div>
@@ -74,7 +74,7 @@ function App() {
       </div>
 
       <div className={`d-lg-none dropdownMenu ${isOpen ? 'slideDown': ''}`}>
-        <DropDownItem>About</DropDownItem>
+        <DropDownItem href='#about'>About</DropDownItem>
         <DropDownItem>Pricing</DropDownItem>
         <DropDownItem>Newsletter</DropDownItem>
       </div>
@@ -125,13 +125,13 @@ function App() {
       </div>
 
       {/* Second page */}
-      <div className='page2 container-fluid d-flex flex-column justify-content-center'>
+      <div className='page2 container-fluid d-flex flex-column justify-content-center' >
 
 
-        <div className='row text-center mb-4'>
+        <div className='row text-center mb-1 mb-lg-4 '>
 
           <div className='col-12'>
-            <div className='p2_title'>Work Flow</div>
+            <div className='p2_title' id='about'>Work Flow</div>
             <div className='p2_paragraph'>what you can expect from us.</div>
           </div>
 
