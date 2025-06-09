@@ -165,3 +165,30 @@ body{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
+.page4{
+    width: 100%;
+    height: 29dvh;
+    border-top: white;
+    border-top-width: 1px;
+    border-top-style: solid;
+}
+
+.p4_title{
+    font-size: clamp(2.5rem, 1.7857rem + 3.5714vw, 5rem);
+    font-weight: var(--bold);
+    background: var(--gradient-white);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.p4_des{
+    font-size: clamp(0.5rem, 0.4286rem + 0.3571vw, 0.75rem);
+    width: clamp(16.5625rem, 13.0804rem + 17.4107vw, 28.75rem);
+}
+
+.copyrights{
+    position: sticky;
+    bottom: 0;
+    left: 50%;
+}

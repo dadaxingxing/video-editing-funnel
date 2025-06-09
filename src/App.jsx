@@ -3,9 +3,10 @@ import CTA from './component/CTA';
 import Proof from './component/Proof';
 import Cards from './component/Cards';
 import Offer from './component/Offer';
+import BeehiivForm from './component/BeehiveForm';
+
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import { useState } from 'react';
-
 
 
 function App() {
@@ -47,7 +48,7 @@ function App() {
           <div className='navButtons d-flex justify-content-center'>
             <DropDownItem href='#about'>About</DropDownItem>
             <DropDownItem href='#pricing'>Pricing</DropDownItem>
-            <DropDownItem>Newsletter</DropDownItem>
+            <DropDownItem href='#newsletter'>Newsletter</DropDownItem>
           </div>
         </div>
 
@@ -77,7 +78,7 @@ function App() {
       <div className={`d-lg-none dropdownMenu ${isOpen ? 'slideDown': ''}`}>
         <DropDownItem href='#about'>About</DropDownItem>
         <DropDownItem href='#pricing'>Pricing</DropDownItem>
-        <DropDownItem>Newsletter</DropDownItem>
+        <DropDownItem href='#newsletter'>Newsletter</DropDownItem>
       </div>
 
       {/* first page */}
@@ -190,12 +191,28 @@ function App() {
 
 
       {/* Final Page/Section */}
-      <div className='container d-flex flex-column flex-sm-row'>
-        <div>
-          
+      <div className='container d-flex page4 align-items-center justify-content-center mt-5' id='newsletter'>
+
+        <div className='row g-4'>
+
+          <div className='col-12 col-md-6 d-flex flex-column align-items-center mb-3'>
+
+            <div className='p4_title'>ViralCraft</div>
+            <div className='p4_des '>bi-weekly personal newsletter documenting skill acquisition on social media marketing, full stack development and building online businesses.</div>
+          </div>
+
+          <div className='col-12 col-md-6 d-flex justify-content-center align-items-center'>
+            <BeehiivForm></BeehiivForm>
+          </div>
         </div>
 
         
+      </div>
+
+      <div className="w-100 d-flex justify-content-center mt-5">
+        <div className='copyrights text-center'>
+          @ 2025 disciplor & existential.ink. All rights reserved.
+        </div>
       </div>
     </>
 
