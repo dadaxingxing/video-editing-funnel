@@ -7,6 +7,7 @@ import 'bootstrap-icons/font/bootstrap-icons.css';
 import { useState } from 'react';
 
 
+
 function App() {
   const [isOpen, setIsOpen] = useState(false);
   const offerPoints = [
@@ -125,13 +126,13 @@ function App() {
       </div>
 
       {/* Second page */}
-      <div className='page2 container-fluid d-flex flex-column justify-content-center' >
+      <div className='page2 container-fluid d-flex flex-column justify-content-center' id='about' >
 
 
         <div className='row text-center mb-lg-4 '>
 
           <div className='col-12'>
-            <div className='p2_title' id='about'>Work Flow</div>
+            <div className='p2_title'>Work Flow</div>
             <div className='p2_paragraph'>what you can expect from us.</div>
           </div>
 
@@ -166,9 +167,9 @@ function App() {
       </div>
 
       {/* Third Page */}
-      <div className='container page3 d-flex justify-content-center align-items-center flex-column'>
+      <div className='container page3 d-flex justify-content-center align-items-center flex-column' id='pricing'>
         <div className='row' >
-          <div className='col-12 p3_title' id='pricing'>Pricing</div>
+          <div className='col-12 p3_title'>Pricing</div>
 
         </div>
         <div className='row'>
@@ -186,7 +187,16 @@ function App() {
         </div>
         
       </div>
-    
+
+
+      {/* Final Page/Section */}
+      <div className='container d-flex flex-column flex-sm-row'>
+        <div>
+          
+        </div>
+
+        
+      </div>
     </>
 
 
