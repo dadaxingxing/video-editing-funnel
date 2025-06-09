@@ -128,7 +128,7 @@ function App() {
       <div className='page2 container-fluid d-flex flex-column justify-content-center' >
 
 
-        <div className='row text-center mb-1 mb-lg-4 '>
+        <div className='row text-center mb-lg-4 '>
 
           <div className='col-12'>
             <div className='p2_title' id='about'>Work Flow</div>
@@ -162,46 +162,24 @@ function App() {
               paragraph='You will review our edit until you are satisfied before we move onto the next video.'
             />
           </div>
+        </div>
+      </div>
 
+      {/* Third Page */}
+      <div className='container page3 d-flex justify-content-center align-items-center flex-column'>
+        <div className='row'>
+          <div className='p3_title'>Pricing</div>
 
         </div>
-
-
-      </div>
-
-      {/* <CTA
-        height='2.8rem'
-        width='7.8rem'
-      >Buy Now</CTA>
-
-      <div className='d-flex flex-row'>
-
-        
-      </div>
-      <div className='d-flex flex-row'>
-
-        <Cards 
-          title='Review'
-          paragraph='Indicate the amount of video needed everyday and fill out ways to contact by filling out the form.'
-        />
-        <Cards 
-          title='Upload'
-          paragraph='Upload all footage to us along with any requirements to a google drive.'
-        />
-        <Cards 
-          title='Revise'
-          paragraph='You will review our edit until you are satisfied before we move onto the next video.'
+        <Offer
+          packages='Standard'
+          description='The ideal plan for daily short-form content needs'
+          price='$35'
+          unit='/video'
+          points={offerPoints}
         />
         
       </div>
-
-      <Offer
-        packages='Standard'
-        description='The ideal plan for daily short-form content needs'
-        price='$35'
-        unit='/video'
-        points={offerPoints}
-      /> */}
     
     </>
 

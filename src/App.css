@@ -118,8 +118,7 @@ body{
 }
 
 .p1_text{
-        font-size: clamp(.8rem, 3vw, 1.5rem);
-
+    font-size: clamp(.8rem, 3vw, 1.5rem);
 }
 
 .p1_proof_container{
@@ -151,4 +150,18 @@ body{
 
 .p2_cards{
     gap: 2rem;
+}
+
+.page3{
+    width: 100%;
+    height: 100dvh;
+    gap: 2.75rem;
+}
+
+.p3_title{
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-weight: var(--bold);
+    background: var(--gradient-white);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }

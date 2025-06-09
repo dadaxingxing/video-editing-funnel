@@ -2,7 +2,7 @@ import './CTA.css';
 import { useState } from 'react';
 
 
-function CTA({children, height='2.5rem', width='5.6rem', radius='.25rem'}) {
+function CTA({children, height='2.5rem', width='5.6rem', radius='.25rem', font_size='1.25rem'}) {
     const handleSubmit = () => {
         console.log('Redirecting user to bottom of funnel!')
     };
@@ -15,7 +15,8 @@ function CTA({children, height='2.5rem', width='5.6rem', radius='.25rem'}) {
                 style={{
                     height,
                     width,
-                    borderRadius:radius,
+                    borderRadius: radius,
+                    fontSize: font_size,
                 }}
             >
                 <div className='button_text'>{children}</div>

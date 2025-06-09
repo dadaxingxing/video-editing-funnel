@@ -6,10 +6,10 @@
 }
 
 .offerFrame{
-    width: 39rem;
-    height: 46rem;
+    width: clamp(18.625rem, 13.4107rem + 26.0714vw, 36.875rem);
+    height: clamp(25.5625rem, 20.0625rem + 27.5vw, 44.8125rem);
     background-color: var(--black);
-    padding: 4rem;
+    
     color: white;
     border-radius: 1.75rem;
 
@@ -22,7 +22,7 @@
 }
 
 .package{
-    font-size: 2.25rem;
+    font-size: clamp(1.25rem, 0.9643rem + 1.4286vw, 2.25rem);
     font-weight: 600;
     color: var(--white_gradient);
 
@@ -32,7 +32,7 @@
 }
 
 .description{
-    font-size: 1.5rem;
+    font-size: clamp(1rem, 0.8571rem + 0.7143vw, 1.5rem);
     color: var(--lighter_grey);
 
 }
@@ -43,7 +43,7 @@
 }
 
 .price{
-    font-size: 4.6rem;
+    font-size: clamp(2.5rem, 1.8929rem + 3.0357vw, 4.625rem);
     font-weight: 600;
 }
 
@@ -51,17 +51,17 @@
     background-color: var(--grey);
     color: var(--lighter_grey);
     border-radius: .25rem;
-    font-size: 1rem;
+    font-size: clamp(0.5rem, 0.3571rem + 0.7143vw, 1rem);
 }
 
 
 .bulletPoints{
-    height: 29rem;
+    height: clamp(17.5rem, 14.9643rem + 12.6786vw, 26.375rem);
     line-height: 250%;
 }
 
 .point{
-    font-size: 1.5rem;
+    font-size: clamp(1rem, 0.8571rem + 0.7143vw, 1.5rem);
     list-style-type: '🗸 ';
 }
 
