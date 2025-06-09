@@ -10,7 +10,9 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "bootstrap": "^5.3.6",
+    "@fontsource/montserrat": "^5.2.6",
+    "@fontsource/roboto": "^5.2.6",
+    "bootstrap": "^4.3.1",
     "bootstrap-icons": "^1.13.1",
     "react": "^19.1.0",
     "react-dom": "^19.1.0"
