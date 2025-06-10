@@ -62,6 +62,5 @@
 
 .point{
     font-size: clamp(1rem, 0.8571rem + 0.7143vw, 1.5rem);
-    list-style-type: '🗸 ';
 }
 

@@ -100,7 +100,7 @@ function App() {
             <CTA
               height='2.8rem'
               width='7.8rem'
-            >Buy Now</CTA>
+            >Free quota</CTA>
           </div>
 
           {/* Proof */}
