@@ -174,7 +174,7 @@ function App() {
 
         </div>
         <div className='row'>
-          <div className='col-12'>
+          <div className='col-12 pb-5'>
 
             <Offer
               packages='Standard'
