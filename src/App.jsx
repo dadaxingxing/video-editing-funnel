@@ -209,8 +209,8 @@ function App() {
         
       </div>
 
-      <div className="w-100 d-flex justify-content-center mt-5">
-        <div className='copyrights text-center'>
+      <div className="mt-5">
+        <div className='copyrights text-center mx-auto'>
           @ 2025 disciplor & existential.ink. All rights reserved.
         </div>
       </div>

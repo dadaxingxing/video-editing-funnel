@@ -191,4 +191,5 @@ body{
     position: sticky;
     bottom: 0;
     left: 50%;
+    font-size: clamp(0.5rem, 0.4286rem + 0.3571vw, 0.75rem);
 }
