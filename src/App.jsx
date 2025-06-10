@@ -12,11 +12,11 @@ import { useState } from 'react';
 function App() {
   const [isOpen, setIsOpen] = useState(false);
   const offerPoints = [
-    'short premium content (10-30s)',
+    'Premium content (10-30s)',
     '24 hours guaranteed delivery',
-    'thumbnail design',
-    'unlimited revisions',
-    'dedicated video editor'
+    'Thumbnail design',
+    'Unlimited revisions',
+    'Dedicated video editor'
   ];
 
   const DropDownItem = ({children, href='#'}) => {
@@ -132,7 +132,7 @@ function App() {
 
         <div className='row text-center mb-lg-4 '>
 
-          <div className='col-12'>
+          <div className='col-12 d-none d-sm-block'>
             <div className='p2_title'>Work Flow</div>
             <div className='p2_paragraph'>what you can expect from us.</div>
           </div>
@@ -169,7 +169,7 @@ function App() {
 
       {/* Third Page */}
       <div className='container page3 d-flex justify-content-center align-items-center flex-column' id='pricing'>
-        <div className='row' >
+        <div className='row d-none d-sm-block' >
           <div className='col-12 p3_title'>Pricing</div>
 
         </div>
