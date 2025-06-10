@@ -209,7 +209,7 @@ function App() {
         
       </div>
 
-      <div className="mt-5">
+      <div className="mt-5 mb-2">
         <div className='copyrights text-center mx-auto'>
           @ 2025 disciplor & existential.ink. All rights reserved.
         </div>
