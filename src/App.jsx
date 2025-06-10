@@ -100,7 +100,7 @@ function App() {
             <CTA
               height='2.8rem'
               width='7.8rem'
-            >Free quota</CTA>
+            >Try service</CTA>
           </div>
 
           {/* Proof */}
@@ -205,9 +205,16 @@ function App() {
             <BeehiivForm></BeehiivForm>
           </div>
         </div>
-
-        
       </div>
+      {/* <div className='row w-100 d-flex'>
+        <div className='col-6'>
+          contact: xiaxing.zhu@disciplor.com
+        </div>
+        <div className='col-6'>
+
+        </div>
+
+      </div> */}
 
       <div className="mt-5 mb-2">
         <div className='copyrights text-center mx-auto'>
