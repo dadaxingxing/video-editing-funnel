@@ -193,9 +193,9 @@ function App() {
       {/* Final Page/Section */}
       <div className='container d-flex page4 align-items-center justify-content-center mt-5' id='newsletter'>
 
-        <div className='row g-4'>
+        <div className='row w-100 d-flex justify-content-between'>
 
-          <div className='col-12 col-md-6 d-flex flex-column align-items-center mb-3'>
+          <div className='col-12 col-md-6 d-flex flex-column justify-content-center align-items-center mb-3'>
 
             <div className='p4_title'>ViralCraft</div>
             <div className='p4_des '>bi-weekly personal newsletter documenting skill acquisition on social media marketing, full stack development and building online businesses.</div>
