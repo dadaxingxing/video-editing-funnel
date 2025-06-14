@@ -20,7 +20,7 @@
 }
 
 .button_frame:active{
-    background-color: transparent;
+    background-color: transparent; 
     /* transform: scale(.10); */
 
 }

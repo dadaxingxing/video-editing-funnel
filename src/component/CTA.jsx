@@ -7,12 +7,38 @@ function CTA({children, height='2.5rem', width='5.6rem', radius='.25rem', font_s
     const [showForm, setShowForm] = useState(false);
     const iframeRef = useRef(null);
     useEffect(() => {
-        if (!showForm && !iframeRef.current) return;
+        if (!showForm || !iframeRef.current) return;
 
         const queryParams = window.location.search;
         iframeRef.current.src = `https://tally.so/r/mR6Vo4${queryParams}`;
     }, [showForm]);
+    
+    useEffect(() => {
+        const handleKeyDown = (e) => {
+            if (e.handleKeyDown === 'escape'){
+                setShowForm(false);
+                if (window.history.state?.modalOpen) {
+                    window.history.back();
+                }
+            }
+        };
 
+        const handlePopState = () => {
+            setShowForm(false);
+        };
+
+        if (showForm) {
+            window.addEventListener('keydown', handleKeyDown);
+            window.addEventListener('popstate', handlePopState);
+            window.history.pushState({ modalOpen: true }, '');
+        }
+
+        return () => {
+            window.removeEventListener('keydown', handleKeyDown);
+            window.removeEventListener('popstate', handlePopState);
+        };
+    }, [showForm]);
+        
     return (
         <>
             <div 
@@ -38,6 +64,18 @@ function CTA({children, height='2.5rem', width='5.6rem', radius='.25rem', font_s
                     backgroundColor: 'rgba(0, 0, 0, 0.75)',
                 }}
                 >
+                    {/* <div 
+                        className='btn button_frame d-flex justify-content-center'
+                        onClick={() => setShowForm(false)}
+                        style={{
+                            height,
+                            width,
+                            borderRadius: radius,
+                            fontSize: font_size,
+                        }}
+                    >
+                        close
+                    </div> */}
                     <iframe
                         ref={iframeRef}
                         title="Free video editing quota"
