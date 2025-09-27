@@ -12,6 +12,7 @@
   "dependencies": {
     "@fontsource/montserrat": "^5.2.6",
     "@fontsource/roboto": "^5.2.6",
+    "@typeform/embed-react": "^4.6.0",
     "bootstrap": "^4.3.1",
     "bootstrap-icons": "^1.13.1",
     "react": "^19.1.0",
