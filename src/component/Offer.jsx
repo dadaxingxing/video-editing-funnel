@@ -15,7 +15,7 @@ function Offer({packages, description, price, unit, points}) {
                 height='4rem'
                 width='100%'
                 radius='1rem'
-            >Try for FREE</CTA>
+            >Sign-up</CTA>
             <ul className='bulletPoints mt-2 mt-lg-5'>
                 {points.map((point, index) => (
                     <li className='point' key={index}>{point}</li>

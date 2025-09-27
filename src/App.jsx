@@ -7,9 +7,12 @@ import BeehiivForm from './component/BeehiveForm';
 
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import { useState } from 'react';
+import { useViewportHeight } from './hooks/useViewportHeight';
 
 
 function App() {
+  useViewportHeight();
+  
   const [isOpen, setIsOpen] = useState(false);
   const offerPoints = [
     'Premium content (10-30s)',
@@ -47,7 +50,7 @@ function App() {
         <div className='col-4 d-none d-lg-block'>
           <div className='navButtons d-flex justify-content-center'>
             <DropDownItem href='#about'>About</DropDownItem>
-            <DropDownItem href='#pricing'>Pricing</DropDownItem>
+            <DropDownItem href='#pricing'>Package</DropDownItem>
             <DropDownItem href='#newsletter'>Newsletter</DropDownItem>
           </div>
         </div>
@@ -170,7 +173,7 @@ function App() {
       {/* Third Page */}
       <div className='container page3 d-flex justify-content-center align-items-center flex-column' id='pricing'>
         <div className='row d-none d-sm-block' >
-          <div className='col-12 p3_title'>Pricing</div>
+          <div className='col-12 p3_title'>Package</div>
 
         </div>
         <div className='row'>
@@ -179,8 +182,8 @@ function App() {
             <Offer
               packages='Standard'
               description='The ideal plan for daily short-form content needs'
-              price='$35'
-              unit='/video'
+              price='#30'
+              unit='reels/month'
               points={offerPoints}
             />
 
