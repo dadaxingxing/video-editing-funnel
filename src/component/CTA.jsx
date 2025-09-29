@@ -7,6 +7,7 @@ function CTA({children, height='2.5rem', width='5.6rem', radius='.25rem', fontSi
     return (
         <PopupButton
             id="daeQ7EP9"
+            size={100}
             className="btn button_frame d-flex justify-content-center align-items-center"
             style={{
                 height,
@@ -14,9 +15,11 @@ function CTA({children, height='2.5rem', width='5.6rem', radius='.25rem', fontSi
                 borderRadius: radius,
                 fontSize,
             }}
+            onClose={() => {
+                document.body.style.overflow = 'auto';
+            }}
         >
-
-        {children}
+            {children}
         </PopupButton>
 
 
